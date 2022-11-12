@@ -3,5 +3,6 @@
 - Collection
   - [MKCOL](/collection/mkcol.md)
   - [GET](/collection/get.md)
+  - [HEAD](/collection/head.md)
 - [Reference WebDAV Servers](/reference_webdav_servers.md)
 - [Credits & License](/credits_and_license.md)
