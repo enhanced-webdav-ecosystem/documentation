@@ -25,12 +25,33 @@
     loadSidebar: true,
     subMaxLevel: 2,
     loadNavbar: true,
-    themeColor: '#008539'
+    themeColor: '#FF7D00',
+    tabs: {
+      persist    : true,
+      sync       : true,
+      theme      : 'material',
+      tabComments: true,
+      tabHeadings: true
+    }
   }
 </script>
 <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
 <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-php.min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-yaml.min.js"></script>
+<script src="//unpkg.com/mermaid/dist/mermaid.js"></script>
+<script src="//unpkg.com/docsify-mermaid@latest/dist/docsify-mermaid.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsify-example-panels"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
+<script>mermaid.initialize({
+  startOnLoad: true,
+  theme: 'neutral',
+  flowchart: {
+    curve: 'linear'
+  },
+  themeVariables: {
+    fontFamily: '\'Fira Code\', \'Roboto Mono\', Monaco, courier, monospace'
+  }
+});</script>
 </body>
 </html>

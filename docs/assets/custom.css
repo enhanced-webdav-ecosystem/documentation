@@ -19,3 +19,43 @@
 .sidebar-nav li {
     font-size: 14px;
 }
+
+
+/* mermaid.js custom styles */
+
+.mermaid rect,
+.mermaid polygon {
+    stroke-width: 2px !important;
+    fill: #F7F9FA !important;
+    stroke: #67728A !important;
+}
+
+.mermaid .flowchart-link {
+    stroke-width: 2px !important;
+    stroke: #67728A !important;
+}
+
+.mermaid .init > rect {
+    fill: #E8F5FF !important;
+    stroke: #036FE3 !important;
+}
+
+.mermaid .status2xx > rect {
+    fill: #EAF9E8 !important;
+    stroke: #008539 !important;
+}
+
+.mermaid .status3xx > rect {
+    fill: #EAF9E8 !important;
+    stroke: #008539 !important;
+}
+
+.mermaid .status4xx > rect {
+    fill: #FFF2E4 !important;
+    stroke: #F07F23 !important;
+}
+
+.mermaid .status5xx > rect {
+    fill: #FFF2F2 !important;
+    stroke: #DA294A !important;
+}

@@ -1,3 +1,6 @@
 - [Home](/)
 - [Getting Started](/getting_started.md)
+- Collection
+  - [MKCOL](/collection/mkcol.md)
+- [Reference WebDAV Servers](/reference_webdav_servers.md)
 - [Credits & License](/credits_and_license.md)
