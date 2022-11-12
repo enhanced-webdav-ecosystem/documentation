@@ -35,6 +35,10 @@
     stroke: #67728A !important;
 }
 
+.mermaid .unofficial > rect {
+    stroke-dasharray: 6;
+}
+
 .mermaid .init > rect {
     fill: #E8F5FF !important;
     stroke: #036FE3 !important;

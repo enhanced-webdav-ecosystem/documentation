@@ -26,6 +26,7 @@ graph TB
   class error415 status4xx
   class error507 status5xx
   class redirect301 status3xx
+  class redirect301 unofficial
   class success201 status2xx
   
   init --> checkDuplicate
