@@ -7,7 +7,7 @@ Identical to a GET request without the response body.
 ```mermaid
 graph TB
   init([server receives HEAD-request])
-  canHandleGet{{can server handle HEAD?}}
+  isHeadSupported{{is HEAD supported?}}
   checkURI{{does URI exist?}}
   error404([return error 404])
   error405([return error 405])
@@ -20,9 +20,9 @@ graph TB
   class success200 status2xx
   class redirect301 status3xx
   
-  init --> canHandleGet
-  canHandleGet -- yes --> checkURI
-  canHandleGet -- no --> error405
+  init --> isHeadSupported
+  isHeadSupported -- yes --> checkURI
+  isHeadSupported -- no --> error405
   checkURI -- yes --> success200
   checkURI -- no --> redirect301
   checkURI -- no --> error404

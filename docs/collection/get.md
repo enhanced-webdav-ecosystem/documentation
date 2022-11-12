@@ -10,7 +10,7 @@ Returns data corresponding to a collection/folder.
 ```mermaid
 graph TB
   init([server receives GET-request])
-  canHandleGet{{can server handle GET?}}
+  isGetSupported{{is GET supported?}}
   checkURI{{does URI exist?}}
   error404([return error 404])
   error405([return error 405])
@@ -23,9 +23,9 @@ graph TB
   class success200 status2xx
   class redirect301 status3xx
   
-  init --> canHandleGet
-  canHandleGet -- yes --> checkURI
-  canHandleGet -- no --> error405
+  init --> isGetSupported
+  isGetSupported -- yes --> checkURI
+  isGetSupported -- no --> error405
   checkURI -- yes --> success200
   checkURI -- no --> redirect301
   checkURI -- no --> error404
